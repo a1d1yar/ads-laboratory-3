@@ -20,4 +20,7 @@ public class MyArrayListStack<T> extends MyArrayList {
     public boolean isEmpty(){
         return list.isEmpty();
     }
+    public int size(T item){
+        return list.size();
+    }
 }
