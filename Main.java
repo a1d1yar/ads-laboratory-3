@@ -41,7 +41,38 @@ public class Main {
                 assertTrue(exceptionThrown);
             }
 
+            @Test
+            public void testQueue() {
+                MyLinkedListQueue<String> queue = new MyLinkedListQueue<>();
+                assertTrue(queue.isEmpty());
+
+                queue.enqueue("A");
+                queue.enqueue("B");
+                queue.enqueue("C");
+
+                assertEquals(3, queue.size());
+                assertEquals("A", queue.peek());
+                assertEquals("A", queue.dequeue());
+
+                assertEquals(2, queue.size());
+                assertEquals("B", queue.peek());
+                assertEquals("B", queue.dequeue());
+
+                assertEquals(1, queue.size());
+                assertEquals("C", queue.peek());
+                assertEquals("C", queue.dequeue());
+
+                assertTrue(queue.isEmpty());
+
+                boolean exceptionThrown = false;
+                try {
+                    queue.dequeue();
+                } catch (NoSuchElementException e) {
+                    exceptionThrown = true;
+                }
+                assertTrue(exceptionThrown);
+            }
+        }
 
     }
-}
 }
