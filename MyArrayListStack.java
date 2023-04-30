@@ -17,4 +17,7 @@ public class MyArrayListStack<T> extends MyArrayList {
     public T peek(){
         return (T) list.get(0);
     }
+    public boolean isEmpty(){
+        return list.isEmpty();
+    }
 }
