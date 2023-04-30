@@ -10,4 +10,7 @@ public class MyLinkedListQueue<T> extends MyArrayList<T>{
     public T dequeue(){
         return (T) list.remove(0);
     }
+    public T peek(){
+        return (T) list.get(0);
+    }
 }
