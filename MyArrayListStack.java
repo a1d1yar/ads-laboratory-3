@@ -1,8 +1,6 @@
 import java.util.EmptyStackException;
 
 public class MyArrayListStack<T> extends MyArrayList {
-    private T[] arr;
-    private int size;
     MyArrayList<T> list ;
     public MyArrayListStack() {
         this.list = new MyArrayList<>();
@@ -18,7 +16,11 @@ public class MyArrayListStack<T> extends MyArrayList {
         return (T) list.get(0);
     }
     public boolean isEmpty(){
-        return list.isEmpty();
+        if(list.isEmpty())
+            throw new EmptyStackException();
+        else {
+            return false;
+        }
     }
     public int size(T item){
         return list.size();
