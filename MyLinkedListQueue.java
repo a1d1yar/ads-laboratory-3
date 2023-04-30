@@ -4,5 +4,7 @@ public class MyLinkedListQueue<T> extends MyArrayList<T>{
     public MyLinkedListQueue(){
         this.list=new MyArrayList();
     }
-
+    public void enqueue(T item){
+        list.add(item,list.size()-1);
+    }
 }
