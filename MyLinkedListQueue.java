@@ -16,4 +16,7 @@ public class MyLinkedListQueue<T> extends MyArrayList<T>{
     public boolean isEmpty(){
         return list.isEmpty();
     }
+    public int size(){
+        return list.size();
+    }
 }
