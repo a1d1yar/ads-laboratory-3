@@ -11,4 +11,7 @@ public class MyArrayListStack<T> extends MyArrayList {
         list.add(item);
 
     }
+    public T pop(){
+        return (T) list.remove(0);
+    }
 }
