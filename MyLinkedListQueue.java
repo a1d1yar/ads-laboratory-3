@@ -7,4 +7,7 @@ public class MyLinkedListQueue<T> extends MyArrayList<T>{
     public void enqueue(T item){
         list.add(item,list.size()-1);
     }
+    public T dequeue(){
+        return (T) list.remove(0);
+    }
 }
