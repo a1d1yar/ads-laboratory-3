@@ -14,4 +14,7 @@ public class MyArrayListStack<T> extends MyArrayList {
     public T pop(){
         return (T) list.remove(0);
     }
+    public T peek(){
+        return (T) list.get(0);
+    }
 }
