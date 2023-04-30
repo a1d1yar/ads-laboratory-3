@@ -61,6 +61,9 @@ public class MyArrayList<T> implements MyList {
 
         return cont;
     }
+    public boolean isEmpty() {
+        return size == 0;
+    }
 
     /**
      * Adds the specified element to the end of the list.
