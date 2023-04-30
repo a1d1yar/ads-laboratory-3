@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 /**
  * A generic implementation of the MyList interface that stores elements in an array.
  *
@@ -200,6 +201,7 @@ public class MyArrayList<T> implements MyList {
             throw new IndexOutOfBoundsException();
         }
     }
+
     /**
      * Sorts the elements in the list in ascending order.
      * This method only works if the list contains either all integers or all doubles.

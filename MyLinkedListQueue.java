@@ -40,12 +40,8 @@ public class MyLinkedListQueue<T> extends MyArrayList<T> {
      * @return the head of this queue
      * @throws NoSuchElementException if this queue is empty
      */
-    public T peek() throws NoSuchElementException {
-        if (list.isEmpty()) {
-            throw new NoSuchElementException();
-        } else {
-            return (T) list.get(0);
-        }
+    public T peek() {
+        return (T) list.get(0);
     }
 
     /**
